@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bulk Message Sender for WhatsApp Web — Free Chrome Extension with Safety Meter</title>
+  <meta name="description" content="Send personalized bulk messages to your customers from WhatsApp Web. Free Chrome extension with Excel/CSV upload, name personalization, daily safe limits and sending reports.">
+  <link rel="canonical" href="https://wabulkmessagesender.com/">
+  <meta property="og:title" content="Bulk Message Sender for WhatsApp Web">
+  <meta property="og:description" content="Personal messages to every customer, with a Safety Meter that tells you when to slow down.">
+  <meta property="og:url" content="https://wabulkmessagesender.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://wabulkmessagesender.com/img/dashboard.png">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Bulk Message Sender",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Chrome",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "description": "Chrome extension to send personalized bulk messages from WhatsApp Web with safe daily limits."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Is Bulk Message Sender free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The Free plan lets you send up to 50 personalized messages a day with reports. No card needed." } },
+      { "@type": "Question", "name": "Can my WhatsApp number get banned?", "acceptedAnswer": { "@type": "Answer", "text": "Any tool that sends many messages carries some risk. Our Safety Meter, daily limits and new-number mode lower that risk. Only message people who agreed to hear from you." } },
+      { "@type": "Question", "name": "Do I need to save numbers in my phone?", "acceptedAnswer": { "@type": "Answer", "text": "No. Upload a CSV or paste numbers with the country code and the extension opens each chat for you." } },
+      { "@type": "Question", "name": "Where is my contact list stored?", "acceptedAnswer": { "@type": "Answer", "text": "Only in your own browser. We do not upload your contacts or messages to our servers." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap">
+      <a class="logo" href="/"><img src="img/logo.png" alt="" width="34" height="34">Bulk Message Sender</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#safety">Safety</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <!-- Replace # with your Chrome Web Store link after publishing -->
+        <a class="btn small" href="#" data-install>Add to Chrome</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div>
+          <h1 id="hero-title">Write one message. Every customer gets their own.</h1>
+          <p class="lede">A bulk message sender for WhatsApp Web that puts each customer's name in the message, sends at a safe pace, and stops before you send too much.</p>
+          <div class="cta-row">
+            <a class="btn" href="#" data-install>Add to Chrome — it's free</a>
+            <a class="btn outline" href="#how">See how it works</a>
+          </div>
+          <p class="fine">Free plan: 50 messages a day. No card. Your contacts stay on your computer.</p>
+        </div>
+
+        <div class="fan" aria-label="Example: one template becomes personal messages">
+          <p class="fan-caption">Your message</p>
+          <div class="fan-template">Hi <span class="var">{name}</span>, your <span class="var">{product}</span> is ready for pickup today. Reply STOP to stop messages.</div>
+          <p class="fan-caption">What each customer receives</p>
+          <div class="bubbles">
+            <div class="bubble"><span class="to">To Priya</span>Hi <b>Priya</b>, your <b>blue kurta</b> is ready for pickup today. Reply STOP to stop messages.<span class="tick">✓✓</span></div>
+            <div class="bubble"><span class="to">To Carlos</span>Hi <b>Carlos</b>, your <b>bike service</b> is ready for pickup today. Reply STOP to stop messages.<span class="tick">✓✓</span></div>
+            <div class="bubble"><span class="to">To Amina</span>Hi <b>Amina</b>, your <b>cake order</b> is ready for pickup today. Reply STOP to stop messages.<span class="tick">✓</span></div>
+            <div class="bubble skip"><span class="to">Skipped: +44 7700 …</span>This number replied STOP, so it is never messaged.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <h2 id="how-title">Send your first campaign in three steps</h2>
+        <p class="intro">No phone saving, no setup, no technical skills. It works with normal WhatsApp and WhatsApp Business.</p>
+        <ol class="steps">
+          <li><h3>Add your contacts</h3><p>Upload a CSV from Excel or Google Sheets, or paste numbers. Duplicates and wrong numbers are removed for you.</p></li>
+          <li><h3>Write one message</h3><p>Add {name} or any column from your file. See a live preview of exactly what the first customer will get.</p></li>
+          <li><h3>Press Start</h3><p>Messages go out one by one with a gap you choose. Pause, stop or continue tomorrow — nothing is lost.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="safety" id="safety" aria-labelledby="safety-title">
+      <div class="wrap">
+        <div>
+          <h2 id="safety-title">A Safety Meter that tells you when to slow down</h2>
+          <p class="intro">Sending too many messages too fast is how numbers get blocked. The extension watches your pace for you.</p>
+          <ul class="checks">
+            <li>Daily limit you set — sending stops when you reach it</li>
+            <li>New-number mode: maximum 20 messages a day for numbers under 30 days old</li>
+            <li>Gap of at least 10 seconds between messages</li>
+            <li>Do-not-message list, so people who said STOP are never contacted again</li>
+            <li>A clear reason for every message that failed</li>
+          </ul>
+        </div>
+        <div class="meter-demo" aria-label="Safety Meter examples">
+          <div class="meter-row"><div class="lbl"><span>Morning</span><span>17 / 50 · Safe</span></div><div class="track"><div class="fill g"></div></div></div>
+          <div class="meter-row"><div class="lbl"><span>Afternoon</span><span>39 / 50 · Slow down</span></div><div class="track"><div class="fill y"></div></div></div>
+          <div class="meter-row"><div class="lbl"><span>Evening</span><span>50 / 50 · Limit reached</span></div><div class="track"><div class="fill r"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="features" aria-labelledby="features-title">
+      <div class="wrap">
+        <h2 id="features-title">Everything a small business needs</h2>
+        <p class="intro">Built from reading the reviews of other senders: people want it to keep working, to stay safe, and to get help fast.</p>
+        <div class="feature-list">
+          <div class="feature"><h3>CSV upload and paste</h3><p>Any column becomes a variable: name, city, order, amount.</p></div>
+          <div class="feature"><h3>Smart number cleanup</h3><p>Adds your country code, removes duplicates and numbers that are too short.</p></div>
+          <div class="feature"><h3>Pause, stop, continue</h3><p>Close the laptop and pick up tomorrow from the exact same contact.</p></div>
+          <div class="feature"><h3>Sending report</h3><p>Sent, failed and skipped for every number. Download it as a CSV.</p></div>
+          <div class="feature"><h3>Your data stays with you</h3><p>Contacts and messages are stored only in your browser, never on our servers.</p></div>
+          <div class="feature"><h3>Excel files <span class="soon">Soon</span></h3><p>Upload .xlsx directly, without saving as CSV first.</p></div>
+          <div class="feature"><h3>Images, PDFs and videos <span class="soon">Soon</span></h3><p>Send your catalogue or offer poster with the message.</p></div>
+          <div class="feature"><h3>Scheduling and reply inbox <span class="soon">Soon</span></h3><p>Send at the right time and see every reply in one place.</p></div>
+        </div>
+        <div class="shot"><img src="img/dashboard.png" alt="The Bulk Message Sender dashboard with contacts, message preview, safety settings and the sending report" width="1280" height="1100"></div>
+      </div>
+    </section>
+
+    <section id="pricing" aria-labelledby="pricing-title">
+      <div class="wrap">
+        <h2 id="pricing-title">One flat price. No per-message charges.</h2>
+        <p class="intro">Send as many messages as your plan's safe limit allows. Cancel any time in one click.</p>
+        <div class="plans">
+          <div class="plan">
+            <h3>Free</h3>
+            <div class="price">$0</div>
+            <p class="inr">Free forever</p>
+            <ul>
+              <li>50 messages a day</li>
+              <li>CSV upload and paste</li>
+              <li>Name personalization</li>
+              <li>Safety Meter and reports</li>
+            </ul>
+            <a class="btn outline" href="#" data-install>Add to Chrome</a>
+          </div>
+          <div class="plan main">
+            <h3>Pro</h3>
+            <div class="price">$4.99<small> / month</small></div>
+            <p class="inr">₹299 / month in India</p>
+            <ul>
+              <li>Higher safe daily limit</li>
+              <li>Images, PDFs and videos</li>
+              <li>Scheduling and message templates</li>
+              <li>AI message writer</li>
+              <li>No branding</li>
+            </ul>
+            <a class="btn" href="#" data-install>Start free, upgrade later</a>
+          </div>
+          <div class="plan">
+            <h3>Business</h3>
+            <div class="price">$9.99<small> / month</small></div>
+            <p class="inr">₹699 / month in India</p>
+            <ul>
+              <li>Everything in Pro</li>
+              <li>Reply inbox and follow-up reminders</li>
+              <li>Opt-in link and QR code</li>
+              <li>3 team members</li>
+            </ul>
+            <a class="btn outline" href="#" data-install>Start free, upgrade later</a>
+          </div>
+        </div>
+        <p class="note">Paid plans are launching soon. Yearly plans include 2 months free. 7-day money-back on your first payment.</p>
+      </div>
+    </section>
+
+    <section class="band" id="compare" aria-labelledby="compare-title">
+      <div class="wrap">
+        <h2 id="compare-title">How we are different</h2>
+        <p class="intro">Most bulk senders do the basics. We focus on the things their users complain about.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">What you get</th><th scope="col">Bulk Message Sender</th><th scope="col">Many other senders</th></tr></thead>
+            <tbody>
+              <tr><td>Safety Meter with a hard daily limit</td><td class="yes">Yes</td><td class="no">Rarely</td></tr>
+              <tr><td>New-number mode</td><td class="yes">Yes</td><td class="no">Rarely</td></tr>
+              <tr><td>Do-not-message list</td><td class="yes">Yes</td><td class="no">Sometimes</td></tr>
+              <tr><td>Contacts stay on your computer</td><td class="yes">Yes</td><td class="no">Varies</td></tr>
+              <tr><td>One-click cancel and 7-day refund</td><td class="yes">Yes</td><td class="no">Varies</td></tr>
+              <tr><td>Fix promise when WhatsApp Web changes</td><td class="yes">Within 24 hours</td><td class="no">No promise</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap">
+        <h2 id="faq-title">Questions</h2>
+        <details><summary>Is it really free?</summary><p>Yes. The Free plan sends up to 50 personalized messages a day with full reports. No card, no trial timer.</p></details>
+        <details><summary>Can my WhatsApp number get banned?</summary><p>Any tool that sends many messages carries some risk, and no one can promise zero risk. The Safety Meter, daily limit, new-number mode and message gap lower it a lot. The most important rule: only message people who agreed to hear from you, and always include a way to stop.</p></details>
+        <details><summary>Do I need to save numbers in my phone?</summary><p>No. Upload a CSV or paste numbers with the country code. The extension opens each chat for you.</p></details>
+        <details><summary>Does it work with WhatsApp Business?</summary><p>Yes, it works with both the normal and the Business app, through WhatsApp Web on your computer.</p></details>
+        <details><summary>Where is my contact list stored?</summary><p>Only in your own browser. We never upload your contacts or messages. Removing the extension deletes everything.</p></details>
+        <details><summary>Do I need to keep the computer on?</summary><p>Yes, while sending. Keep the dashboard tab and the WhatsApp Web tab open. If you close them, press Continue later and it starts from where it stopped.</p></details>
+      </div>
+    </section>
+
+    <section class="band final" aria-labelledby="final-title">
+      <div class="wrap">
+        <h2 id="final-title">Send your next offer the personal way</h2>
+        <p>Install in one click, upload your list, and send your first 50 messages free today.</p>
+        <a class="btn" href="#" data-install>Add to Chrome — it's free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <div>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="mailto:support@wabulkmessagesender.com">Contact</a>
+      </div>
+      <div>© 2026 Bulk Message Sender. WhatsApp is a trademark of WhatsApp LLC. We are not affiliated with WhatsApp or Meta.</div>
+    </div>
+  </footer>
+</body>
+</html>
